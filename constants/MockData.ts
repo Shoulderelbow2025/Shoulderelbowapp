@@ -586,7 +586,7 @@ We hope you enjoy the congress and make the most of the networking, knowledge, a
 Warm regards,
 Organizing Committee
 Shoulder and Elbow Society of Serbia`,
-    imageUrl: 'https://images.pexels.com/photos/8460467/pexels-photo-8460467.jpeg',
+    imageUrl: '/beograd.jpg',
     isHighlighted: true
   }
 ];
