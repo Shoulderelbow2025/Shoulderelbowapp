@@ -216,4 +216,6 @@ export const speakers: Speaker[] = [
     institution: 'Northwestern University Feinberg School of Medicine',
     country: 'United States',
     countryCode: 'US',
-    bio: 'Professor of Orthopaedic Surgery at Northwestern University Feinberg School of Medicine and the Director of Shoulder and Elbow Surgery in the Depa
+    bio: 'Professor of Orthopaedic Surgery at Northwestern University Feinberg School of Medicine and the Director of Shoulder and Elbow Surgery in the Department of Orthopaedic Surgery.'
+  }
+];
