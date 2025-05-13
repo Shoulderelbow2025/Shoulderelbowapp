@@ -91,8 +91,6 @@ export const programItems: ProgramItem[] = [
     location: 'Hotel Mona Plaza, Belgrade',
     description: 'Closing remarks by Dr. Medenica'
   },
-
-  // Day 2 - May 30, 2025
   {
     id: 'day2-registration',
     title: 'Registration',
@@ -594,3 +592,7 @@ Shoulder and Elbow Society of Serbia`,
 export const videos: Video[] = [];
 
 export const materials: Material[] = [];
+
+export { newsItems }
+
+export { programItems }
