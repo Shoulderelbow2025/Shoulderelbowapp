@@ -215,7 +215,7 @@ export const speakers: Speaker[] = [
     country: 'United States',
     countryCode: 'US',
     bio: 'Professor of Orthopaedic Surgery at Northwestern University Feinberg School of Medicine and the Director of Shoulder and Elbow Surgery in the Department of Orthopaedic Surgery.',
-    imageUrl: '',
+    imageUrl: '/guido-marra.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -226,7 +226,7 @@ export const speakers: Speaker[] = [
     country: 'United States',
     countryCode: 'US',
     bio: 'Award-winning orthopaedic surgeon who is double board certified in orthopaedic surgery and sports medicine. He is the Olympic Team Doctor for the USA Men\'s and Women\'s Indoor Volleyball Teams and an expert in complex joint reconstruction.',
-    imageUrl: '',
+    imageUrl: '/william-stetson.jpg',
     topics: ['Sports Medicine', 'Joint Reconstruction']
   },
   {
@@ -237,7 +237,7 @@ export const speakers: Speaker[] = [
     country: 'United States',
     countryCode: 'US',
     bio: 'Fellowship-trained at Harvard and the Royal Infirmary of Edinburgh, specializing in regenerative medicine and joint preservation. Certified by the American Board of Regenerative Medicine.',
-    imageUrl: '',
+    imageUrl: '/brett-sanders.jpg',
     topics: ['Regenerative Medicine', 'Joint Preservation']
   },
   {
@@ -248,7 +248,7 @@ export const speakers: Speaker[] = [
     country: 'United States',
     countryCode: 'US',
     bio: 'CEO and President of a global medical device company known for "anchorless" arthroscopic transosseous rotator cuff repair.',
-    imageUrl: '',
+    imageUrl: '/justin-anderson.jpg',
     topics: ['Medical Devices', 'Rotator Cuff Repair']
   },
   
@@ -261,7 +261,7 @@ export const speakers: Speaker[] = [
     country: 'Portugal',
     countryCode: 'PT',
     bio: 'Orthopaedist at Hospital da Luz in Lisbon, specialized in arthroscopic and reconstructive surgery of the shoulder and elbow, with a focus on degenerative and sports injuries.',
-    imageUrl: '',
+    imageUrl: '/raul-alonso.jpg',
     topics: ['Arthroscopic Surgery', 'Sports Injuries']
   },
   
@@ -274,7 +274,7 @@ export const speakers: Speaker[] = [
     country: 'United Kingdom',
     countryCode: 'GB',
     bio: 'Fellowship-trained in Canada, Mr. Jain is an honorary senior lecturer at the University of Salford with extensive experience in arthroscopic surgery and sports injuries.',
-    imageUrl: '',
+    imageUrl: '/neil-jain.png',
     topics: ['Arthroscopic Surgery', 'Sports Medicine']
   },
   
@@ -287,7 +287,7 @@ export const speakers: Speaker[] = [
     country: 'Turkey',
     countryCode: 'TR',
     bio: 'Specialist in shoulder and elbow surgery, trained at the University of Istanbul.',
-    imageUrl: '',
+    imageUrl: '/kerem-bilsel.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -298,7 +298,7 @@ export const speakers: Speaker[] = [
     country: 'Turkey',
     countryCode: 'TR',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/ali-ersen.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   
@@ -311,7 +311,7 @@ export const speakers: Speaker[] = [
     country: 'Slovenia',
     countryCode: 'SI',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/boris-poberaj.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -322,7 +322,7 @@ export const speakers: Speaker[] = [
     country: 'Slovenia',
     countryCode: 'SI',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/lado-kovacic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   
@@ -335,7 +335,7 @@ export const speakers: Speaker[] = [
     country: 'Croatia',
     countryCode: 'HR',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/zdravko-jotanovic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -346,7 +346,7 @@ export const speakers: Speaker[] = [
     country: 'Croatia',
     countryCode: 'HR',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/danijel-matek.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   
@@ -359,7 +359,7 @@ export const speakers: Speaker[] = [
     country: 'Bosnia and Herzegovina',
     countryCode: 'BA',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/semin-becirbegovic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   
@@ -372,7 +372,7 @@ export const speakers: Speaker[] = [
     country: 'North Macedonia',
     countryCode: 'MK',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/nenad-petkov.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   
@@ -385,7 +385,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/srdjan-ninkovic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -396,7 +396,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/novak-jovanovic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -418,7 +418,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/tomislav-palibrk.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -429,7 +429,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/ivan-diklic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -440,7 +440,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/ivan-micic.png',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -451,7 +451,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/aleksandar-jevtic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -462,7 +462,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/ljubomir-dakovic.png',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -473,7 +473,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/vladan-stevanovic.jpeg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -484,7 +484,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/mirko-obradovic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -495,7 +495,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/emilija-dubljanin.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -506,7 +506,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/nikola-colic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -517,7 +517,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/ivica-medenica.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -539,7 +539,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/miodrag-glisic.jpg',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   },
   {
@@ -550,7 +550,7 @@ export const speakers: Speaker[] = [
     country: 'Serbia',
     countryCode: 'RS',
     bio: '',
-    imageUrl: '',
+    imageUrl: '/tomislav-stanojcic.png',
     topics: ['Shoulder Surgery', 'Elbow Surgery']
   }
 ];
