@@ -592,7 +592,3 @@ Shoulder and Elbow Society of Serbia`,
 export const videos: Video[] = [];
 
 export const materials: Material[] = [];
-
-export { newsItems }
-
-export { programItems }
