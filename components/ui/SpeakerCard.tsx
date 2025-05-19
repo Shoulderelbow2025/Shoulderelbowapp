@@ -13,42 +13,38 @@ interface SpeakerCardProps {
 
 export default function SpeakerCard({ speaker }: SpeakerCardProps) {
   const router = useRouter();
-  
+
   const handlePress = () => {
     router.push(`/speakers/${speaker.id}`);
+  };
+
+  // Automatski bira putanju u zavisnosti od okruženja
+  const getImageUrl = (relativePath: string | undefined) => {
+    const base =
+      process.env.NODE_ENV === 'development'
+        ? ''
+        : 'https://sess2025.netlify.app'; // ← tvoj Netlify URL
+    return relativePath && relativePath !== ''
+      ? `${base}${relativePath}`
+      : `${base}/default.jpg`; // ← opcioni placeholder ako slika ne postoji
   };
 
   return (
     <TouchableOpacity onPress={handlePress} activeOpacity={0.7}>
       <Card style={styles.card}>
         <View style={styles.container}>
-          <Image 
-            source={{ 
-              uri: speaker.imageUrl || '/b948952a-9356-4c77-8238-41ff8221f6d0.jpg'
-            }} 
+          <Image
+            source={{ uri: getImageUrl(speaker.imageUrl) }}
             style={styles.image}
             resizeMode="cover"
           />
           <View style={styles.infoContainer}>
             <Text style={styles.name}>{speaker.name}</Text>
-            {speaker.title && (
-              <Text style={styles.title}>{speaker.title}</Text>
-            )}
-            {speaker.institution && (
-              <View style={styles.institutionContainer}>
-                <MapPin size={14} color={Colors.neutral[600]} />
-                <Text style={styles.institution}>{speaker.institution}</Text>
-              </View>
-            )}
-            {speaker.topics && speaker.topics.length > 0 && (
-              <View style={styles.topicsContainer}>
-                {speaker.topics.map((topic, index) => (
-                  <View key={index} style={styles.topicTag}>
-                    <Text style={styles.topicText}>{topic}</Text>
-                  </View>
-                ))}
-              </View>
-            )}
+            <Text style={styles.institution}>{speaker.institution}</Text>
+            <View style={styles.countryContainer}>
+              <MapPin size={14} color={Colors.medium} />
+              <Text style={styles.country}>{speaker.country}</Text>
+            </View>
           </View>
         </View>
       </Card>
@@ -58,7 +54,8 @@ export default function SpeakerCard({ speaker }: SpeakerCardProps) {
 
 const styles = StyleSheet.create({
   card: {
-    marginBottom: Layout.spacing.m,
+    marginBottom: 12,
+    padding: 12,
   },
   container: {
     flexDirection: 'row',
@@ -66,52 +63,30 @@ const styles = StyleSheet.create({
   image: {
     width: 80,
     height: 80,
-    borderRadius: Layout.radius.medium,
+    borderRadius: 8,
+    marginRight: 12,
   },
   infoContainer: {
     flex: 1,
-    marginLeft: Layout.spacing.m,
+    justifyContent: 'center',
   },
   name: {
-    fontFamily: 'Inter_600SemiBold',
     fontSize: 16,
-    color: Colors.primary[700],
-    marginBottom: Layout.spacing.xs,
-  },
-  title: {
-    fontFamily: 'Inter_500Medium',
-    fontSize: 14,
-    color: Colors.primary[500],
-    marginBottom: Layout.spacing.xs,
-  },
-  institutionContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: Layout.spacing.s,
+    fontWeight: '600',
   },
   institution: {
-    fontFamily: 'Inter_400Regular',
-    fontSize: 14,
-    color: Colors.neutral[600],
-    marginLeft: Layout.spacing.xs,
-    flex: 1,
+    color: Colors.medium,
+    fontSize: 13,
+    marginTop: 4,
   },
-  topicsContainer: {
+  countryContainer: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginTop: Layout.spacing.xs,
+    alignItems: 'center',
+    marginTop: 4,
   },
-  topicTag: {
-    backgroundColor: Colors.primary[50],
-    borderRadius: Layout.radius.small,
-    paddingHorizontal: Layout.spacing.s,
-    paddingVertical: 2,
-    marginRight: Layout.spacing.xs,
-    marginBottom: Layout.spacing.xs,
-  },
-  topicText: {
-    fontFamily: 'Inter_500Medium',
+  country: {
+    color: Colors.medium,
     fontSize: 12,
-    color: Colors.primary[600],
+    marginLeft: 4,
   },
 });
