@@ -18,15 +18,16 @@ export default function SpeakerCard({ speaker }: SpeakerCardProps) {
     router.push(`/speakers/${speaker.id}`);
   };
 
-  // Automatski bira putanju u zavisnosti od okruženja
+  // Automatski pravi punu putanju slike
   const getImageUrl = (relativePath: string | undefined) => {
     const base =
       process.env.NODE_ENV === 'development'
-        ? ''
-        : 'https://sess2025.netlify.app'; // ← tvoj Netlify URL
+        ? '' // za lokalni razvoj
+        : 'https://sess2025.netlify.app'; // za Netlify produkciju
+
     return relativePath && relativePath !== ''
       ? `${base}${relativePath}`
-      : `${base}/default.jpg`; // ← opcioni placeholder ako slika ne postoji
+      : `${base}/default.jpg`; // možeš staviti /default.jpg ako neka slika fali
   };
 
   return (
